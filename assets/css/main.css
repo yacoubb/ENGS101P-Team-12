@@ -2601,12 +2601,12 @@
 
 	#one:before {
 		background-image: url("../../images/banner.jpg");
-		background-position: top right;
+		background-position: bottom right;
 		background-repeat: no-repeat;
 		background-size: cover;
 		content: '';
 		display: block;
-		height: 10em;
+		height: 8em;
 		width: 100%;
 	}
 
@@ -3086,5 +3086,6 @@
 			.button {
 				padding: 0;
 			}
+
 
 	}
