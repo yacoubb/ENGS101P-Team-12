@@ -32,10 +32,10 @@ body {
   padding: 50px 0;
 }
 .timeline ul li {
-  background: #6fc7a9;
+  background: #e2ddc7;
   position: relative;
   margin: 0 auto;
-  width: 5px;
+  width: 1em;
   padding-bottom: 40px;
   list-style-type: none;
 }
@@ -44,15 +44,15 @@ body {
 }
 .timeline ul li:before {
   content: '';
-  background: #e2ddc7;
+  background: #fff;
   position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  width: 25px;
-  height: 20px;
-  border: 3px solid #6fc7a9;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.9em solid #6fc7a9;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
