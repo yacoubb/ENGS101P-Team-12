@@ -53,9 +53,9 @@ body {
   width: 1.5em;
   height: 1.5em;
   border: 0.9em solid #6fc7a9;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border-radius: 20%;
 }
 .timeline ul li .hidden {
   opacity: 0;
@@ -64,7 +64,7 @@ body {
   background: #6fc7a9;
   position: relative;
   top: 7px;
-  width: 200px;
+  width: 300px;
   padding: 20px;
 }
 .timeline ul li .content h2 {
@@ -93,7 +93,7 @@ body {
   left: -38px;
 }
 .timeline ul li:nth-child(even) .content {
-  left: calc(-200px - 45px);
+  left: calc(-300px - 45px);
   background: #6fc7a9;
   background: -webkit-linear-gradient(45deg, #6fc7a9, #6fc7a9);
   background: linear-gradient(45deg, #6fc7a9, #6fc7a9);
