@@ -1,5 +1,12 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500);
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 :root {
   --cyan: #4acaa8;
   --stone: #e2ddc7;
@@ -53,6 +60,10 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+  body {
+    font-family: helvetica;
+  }
+
 
 /* Containers */
 .video-container {
