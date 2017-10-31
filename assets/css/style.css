@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+:root {
+  --cyan: #4acaa8;
+  --stone: #e3ddc5;
+  --fullwidth: 100%;
 }
 
 body {
@@ -17,31 +21,36 @@ body {
 .timeline {
   color: #fff;
 }
-.timeline h1,
-.timeline ul li .content h2 {
+
+.timeline h1, .timeline ul li .content h2 {
   text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
 }
+
 .timeline h1 {
-  background: #6fc7a9;
+  background: var(--cyan);
   padding: 70px 0;
   font-size: 2.5em;
   text-align: center;
 }
+
 .timeline ul {
   background: #fff;
   padding: 50px 0;
 }
+
 .timeline ul li {
-  background: #e2ddc7;
+  background: var(--stone);
   position: relative;
   margin: 0 auto;
   width: 1em;
   padding-bottom: 40px;
   list-style-type: none;
 }
+
 .timeline ul li:last-child {
   padding-bottom: 7px;
 }
+
 .timeline ul li:before {
   content: '';
   background: #fff;
@@ -52,52 +61,61 @@ body {
   -webkit-transform: translateX(-50%);
   width: 1.5em;
   height: 1.5em;
-  border: 0.9em solid #6fc7a9;
+  border: 1.1em solid var(--cyan);
   -webkit-border-radius: 20%;
   -moz-border-radius: 20%;
   border-radius: 20%;
 }
+
 .timeline ul li .hidden {
   opacity: 0;
 }
+
 .timeline ul li .content {
-  background: #6fc7a9;
+  background: var(--cyan);
   position: relative;
   top: 7px;
   width: 300px;
   padding: 20px;
 }
+
 .timeline ul li .content h2 {
   color: #fff;
   padding-bottom: 10px;
   text-align: center;
 }
+
 .timeline ul li .content p {
   text-align: center;
 }
+
 .timeline ul li .content:before {
   content: '';
-  background: #6fc7a9;
+  background: var(--cyan);
   position: absolute;
   top: 0px;
   width: 38px;
   height: 5px;
 }
+
 .timeline ul li:nth-child(odd) .content {
   left: 50px;
-  background: #6fc7a9;
-  background: -webkit-linear-gradient(-45deg, #6fc7a9, #6fc7a9);
-  background: linear-gradient(-45deg, #6fc7a9, #6fc7a9);
+  background: var(--cyan);
+  background: -webkit-linear-gradient(-45deg, var(--cyan), var(--cyan));
+  background: linear-gradient(-45deg, var(--cyan), var(--cyan));
 }
+
 .timeline ul li:nth-child(odd) .content:before {
   left: -38px;
 }
+
 .timeline ul li:nth-child(even) .content {
   left: calc(-300px - 45px);
-  background: #6fc7a9;
-  background: -webkit-linear-gradient(45deg, #6fc7a9, #6fc7a9);
-  background: linear-gradient(45deg, #6fc7a9, #6fc7a9);
+  background: var(--cyan);
+  background: -webkit-linear-gradient(45deg, var(--cyan), var(--cyan));
+  background: linear-gradient(45deg, var(--cyan), var(--cyan));
 }
+
 .timeline ul li:nth-child(even) .content:before {
   right: -38px;
 }
@@ -105,15 +123,16 @@ body {
 /* -------------------------
    ----- Media Queries -----
    ------------------------- */
+
 @media screen and (max-width: 1020px) {
   .timeline ul li .content {
     width: 41vw;
   }
-
   .timeline ul li:nth-child(even) .content {
     left: calc(-41vw - 45px);
   }
 }
+
 @media screen and (max-width: 700px) {
   .timeline ul li {
     margin-left: 20px;
@@ -126,9 +145,9 @@ body {
   }
   .timeline ul li:nth-child(even) .content {
     left: 45px;
-    background: #6fc7a9;
-    background: -webkit-linear-gradient(-45deg, #6fc7a9, #6fc7a9);
-    background: linear-gradient(-45deg, #6fc7a9, #6fc7a9);
+    background: var(--cyan);
+    background: -webkit-linear-gradient(-45deg, var(--cyan), var(--cyan));
+    background: linear-gradient(-45deg, var(--cyan), var(--cyan));
   }
   .timeline ul li:nth-child(even) .content:before {
     left: -33px;

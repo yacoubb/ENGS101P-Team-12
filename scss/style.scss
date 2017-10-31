@@ -1,16 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
-
-$title-background: #6fc7a9;
-$background-color: #e2ddc7;
-$content-background-color: #6fc7a9;
-$content-background-gradient: #6fc7a9;
+$title-background: #4acaa8;
+$background-color: #e3ddc5;
+$content-background-color: #4acaa8;
+$content-background-gradient: #4acaa8;
 $time-color: #fff;
 $text-color: #fff;
 $content-width: 450px;
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -18,43 +17,43 @@ $content-width: 450px;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
-.timeline{
+.timeline {
   color: $text-color;
-  
+
   h1,
-  ul li .content h2{
+  ul li .content h2 {
     text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
   }
-  
-  h1{
+
+  h1 {
     background: $title-background;
     padding: 70px 0;
     font-size: 2.5em;
     text-align: center;
   }
-  
-  ul{
+
+  ul {
     background: $background-color;
     padding: 50px 0;
-    
-    li{
+
+    li {
       background: $content-background-color;
       position: relative;
       margin: 0 auto;
       width: 5px;
       padding-bottom: 40px;
       list-style-type: none;
-      
-      &:last-child{
+
+      &:last-child {
         padding-bottom: 7px;
       }
-      
-      &:before{
+
+      &:before {
         content: '';
         background: $background-color;
         position: absolute;
@@ -69,95 +68,93 @@ body{
         -moz-border-radius: 50%;
         border-radius: 50%;
       }
-      
+
       .hidden {
         opacity: 0;
       }
-      
-      .content{
-        background: $content-background-color; 
+
+      .content {
+        background: $content-background-color;
         position: relative;
         top: 7px;
         width: $content-width;
         padding: 20px;
-        
-        h2{
+
+        h2 {
           color: $time-color;
           padding-bottom: 10px;
           text-align: center;
         }
-        
-        p{
+
+        p {
           text-align: center;
         }
-        
-        &:before{
+
+        &:before {
           content: '';
           background: $content-background-color;
           position: absolute;
-          top: 0px;
+          top: 0;
           width: 38px;
           height: 5px;
         }
       }
-      
+
       &:nth-child(odd) .content {
         left: 50px;
         background: $content-background-color;
         background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
-        background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+        background: linear-gradient(-45deg, $content-background-gradient , $content-background-color);
       }
-      
+
       &:nth-child(odd) .content:before {
         left: -38px;
       }
-      
+
       &:nth-child(even) .content {
         left: calc(-#{$content-width} - 45px);
         background: $content-background-color;
         background: -webkit-linear-gradient(45deg, $content-background-gradient , $content-background-color);
-        background: linear-gradient(45deg,  $content-background-gradient , $content-background-color);
+        background: linear-gradient(45deg, $content-background-gradient , $content-background-color);
       }
-      
+
       &:nth-child(even) .content:before {
         right: -38px;
       }
     }
   }
 }
-
 /* -------------------------
-   ----- Media Queries ----- 
+   ----- Media Queries -----
    ------------------------- */
-
 @media screen and (max-width: 1020px) {
   .timeline ul li .content {
     width: 41vw;
   }
+
   .timeline ul li:nth-child(even) .content {
     left: calc(-41vw - 45px);
   }
 }
-
 @media screen and (max-width: 700px) {
   .timeline ul li {
     margin-left: 20px;
-    
+
     .content {
       width: calc(100vw - 100px);
-    
-      h2{
+
+      h2 {
         text-align: initial;
       }
     }
-    
+
     &:nth-child(even) .content {
       left: 45px;
       background: $content-background-color;
       background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
-      background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+      background: linear-gradient(-45deg, $content-background-gradient , $content-background-color);
     }
-    
+
     &:nth-child(even) .content:before {
       left: -33px;
     }
