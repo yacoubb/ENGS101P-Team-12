@@ -203,6 +203,34 @@ p {
   -webkit-animation-delay: 2.3s;
           animation-delay: 2.3s;
 }
+.timeline-list li:nth-child(5):before {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.timeline-list li:nth-child(5) .content {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.timeline-list li:nth-child(6):before {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.timeline-list li:nth-child(6) .content {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+.timeline-list li:nth-child(7):before {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.timeline-list li:nth-child(7) .content {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+
 
 @-webkit-keyframes revealFromLeft {
   0% {
