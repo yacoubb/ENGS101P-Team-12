@@ -8,4 +8,6 @@
 - Jeff Ho
 - Aaron Liu
 - Adam Peace
-- Sotiris Vavaroutas Find the current website here: <http://engs101pteam12.azurewebsites.net/>
+- Sotiris Vavaroutas
+
+#### Find the current website here: <http://engs101pteam12.azurewebsites.net/>
