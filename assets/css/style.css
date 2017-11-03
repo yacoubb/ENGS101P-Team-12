@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,900);
+:root {
+  --cyan: #4acaa8;
+  --stone: #e2ddc7;
+  --fullwidth: 100%;
+}
 body {
   font-size: 100%;
   line-height: 1.6;
@@ -29,7 +34,7 @@ block-content p {
 }
 
 .subtitle {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Helvetica";
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
@@ -54,12 +59,12 @@ block-content p {
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Helvetica";
   font-weight: 900;
 }
 
 p {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Helvetica";
   line-height: 1.5;
 }
 
@@ -107,7 +112,7 @@ p {
   clear: both;
   position: absolute;
   bottom: 0px;
-  left: -1em;
+  left: -0.75em;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -144,7 +149,7 @@ p {
   content: "";
   position: absolute;
   top: 0px;
-  left: -1.45em;
+  left: -1.95em;
   width: 30px;
   height: 30px;
   border-radius: 50%;
